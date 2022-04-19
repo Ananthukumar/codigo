@@ -1,0 +1,104 @@
+body{
+    font-size: 14px;
+}
+
+.Banner{
+    background-image: url(../public/Home.jpg);
+    min-height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.Ban__inner{
+    max-width: 700px;
+    width: 100%;
+}
+.Ban__inner h1{
+    color: #fff;
+    margin-bottom: 25px;
+}
+.Ban__inner .form-control{
+    padding: 1.25rem;
+}
+
+.header__top{
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    height: 65px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.logo{
+    margin-right: 15px;
+}
+.search__form .form-control{
+    height: 42px;
+    width: 100%;
+    background-color: #eee;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    border: 1px solid #0000;
+}
+.header_form{
+    flex-grow: 1;
+
+}
+.home__left li a{
+    text-decoration: none;
+    padding-right: 20px;
+    color: #767676;
+    font-size: 15px;
+
+}
+.grid__wrap{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 15px;
+    gap: 15px;
+}
+.footer__wrap hr{
+    background-color: #747474;
+}
+
+.footer__wrap{
+    background-color: #1d262d;
+    padding: 60px 0 30px 0;
+}
+.footer__wrap h2{
+    margin: 0 0 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+.footer__wrap ul li a{
+    color: #869fb2;
+    text-decoration: none;
+    font-size: 15px;
+}
+.footer__wrap ul li {
+   padding-bottom: 5px;
+}
+.footer__btm p{
+    margin-bottom: 0;
+    font-size: 14px;
+}
+.btn__tag{
+    background-color: #eeeeee;
+    padding: 5px 30px;
+    text-decoration: none;
+    color: #000;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+.ta__wrap{
+    padding: 10px;
+    display: flex;
+    overflow: auto;
+}
