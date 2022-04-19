@@ -102,3 +102,11 @@ body{
     display: flex;
     overflow: auto;
 }
+.cnt__wrap{
+    height: 100vh;
+}
+.cnt_wrapper{
+    width: 60%;
+    max-width: 600px;
+    margin: auto;
+}
