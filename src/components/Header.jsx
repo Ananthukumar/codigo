@@ -14,7 +14,7 @@ function Header() {
                 <ul className="home__left list-unstyled mb-0 ms-3 d-flex align-items-center">
                     <li><a href="/About" className="" >  About Us</a></li> 
                     <li><a href="" className="">  Advertise</a></li>
-                    <li><a href="" className=""> Explore</a></li>
+                    <li><a href="/Explore" className=""> Explore</a></li>
                     <li><a href="" className="btn"> Login / sign up</a></li>
 
 

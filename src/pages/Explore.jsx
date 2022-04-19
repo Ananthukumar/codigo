@@ -1,11 +1,11 @@
 import React from "react";
 
-function Blog() {
+function Explore() {
     return(
         <div>
-            Blog
+            Explore
         </div>
     )
 }   
 
-export default Blog
+export default Explore
