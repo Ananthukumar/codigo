@@ -1,8 +1,9 @@
+
 body {
     font-size: 14px;
     color: #767676;
-    font-family: 'Times New Roman', Times, serif;
-}
+    font-family: 'Roboto', sans-serif !important;
+} 
 
 a {
     color: #767676;
@@ -61,6 +62,7 @@ a {
 }
 .Ban__inner .form-control {
     padding: 1.15rem;
+    font-size: 14px;
 }
 
 .header__top {
@@ -113,7 +115,7 @@ a {
     text-decoration: none;
     padding: 15px;
     color: #767676;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .btn__cus {
@@ -125,13 +127,15 @@ a {
     height: 35px;
     padding: 0 15px;
     border-radius: 5px;
+    font-size: 14px;
+    text-decoration: none;
 }
 
 .grid__wrap {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 15px;
     gap: 15px;
+    padding: 15px 0;
 }
 
 .footer__wrap hr {
@@ -170,7 +174,7 @@ a {
 
     text-decoration: none;
     border-radius: 6px;
-    font-size: 14px;
+
     margin-right: 25px;
     color: #767676;
 }
@@ -180,13 +184,60 @@ a {
     display: flex;
     overflow: auto;
 }
-
-.cnt__wrap {
+.login__wrapper {
     height: 100vh;
+
+    justify-content: center;
+    display: flex;
+    padding-top: 100px;
+}
+.login__wrapper .login__wrap{
+    width: 550px;
+    padding: 20px;
+}
+.login__wrapper .login__wrap h2{
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 30px;
 }
 
-.cnt_wrapper {
-    width: 60%;
-    max-width: 600px;
-    margin: auto;
+.form__control{
+    background: #f1f1f1;
+    border-radius: 6px;
+    border: 2px solid #fff;
+    padding: 1rem;
+    display: block;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    color: #1a1a1a;
+}
+.btn__primary{
+    border: none;
+    background: #000;
+    padding: 1rem 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+}
+.login__loop{
+    position: absolute;
+    font-family: 'Epilogue stamp',sans-serif;
+    font-size: 10vw;
+    top: 0;
+    left: 20vw;
+    right: auto;
+    bottom: auto;
+    font-weight: 400;
+    white-space: nowrap;
+    transform: rotate(90deg);
+    transform-origin: 0% 0%;
+    width: 100vh;
+    
+}
+.login__loop .text{
+   
 }
