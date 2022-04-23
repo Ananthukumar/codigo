@@ -1,30 +1,71 @@
-body{
+
+body {
     font-size: 14px;
+    color: #767676;
+    font-family: 'Roboto', sans-serif !important;
+} 
+
+a {
+    color: #767676;
+    text-decoration: none;
 }
 
-.Banner{
+.Banner {
     background-image: url(../public/Home.jpg);
     min-height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
-    text-align: center;
+    text-align: left;
     justify-content: center;
     align-items: center;
+    color: #fff;
+    position: relative;
+    z-index: 1;
 }
-.Ban__inner{
+
+.Banner::after {
+    position: absolute;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgb(255 255 255 / 0%) 0%, rgb(0 0 0 / 74%) 100%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    z-index: -1;
+}
+
+.Ban__inner {
     max-width: 700px;
     width: 100%;
 }
-.Ban__inner h1{
+
+.Ban__inner h1 {
     color: #fff;
-    margin-bottom: 25px;
-}
-.Ban__inner .form-control{
-    padding: 1.25rem;
+    margin-bottom: 15px;
+    font-weight: 900;
 }
 
-.header__top{
+.Ban__inner h6 {
+    font-size: 18px;
+    font-weight: 400;
+}
+.form__wrap{
+    position: relative;
+}
+.form__wrap .search{
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    fill: #767676;
+}
+.Ban__inner .form-control {
+    padding: 1.15rem;
+    font-size: 14px;
+}
+
+.header__top {
     align-items: center;
     background-color: #fff;
     display: flex;
@@ -32,81 +73,171 @@ body{
     padding-left: 20px;
     padding-right: 20px;
 }
-.logo{
+
+.logo {
     margin-right: 15px;
 }
-.search__form .form-control{
+
+.search__form .form-control {
     height: 42px;
     width: 100%;
     background-color: #eee;
     border: 0;
-    border-radius: 5px;
+    border-radius: 30px;
     font-size: 14px;
     border: 1px solid #0000;
+    padding-left: 40px;
 }
-.header_form{
+
+.header_form {
     flex-grow: 1;
+    position: relative;
 
 }
-.home__left li a{
-    text-decoration: none;
+
+.header_form .form-control {
+    position: relative;
+}
+
+.header_form .search {
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    fill: #767676;
+}
+
+.home__left {
+    padding-left: 20px;
     padding-right: 20px;
-    color: #767676;
-    font-size: 15px;
-
 }
-.grid__wrap{
+
+.home__left li a {
+    text-decoration: none;
+    padding: 15px;
+    color: #767676;
+    font-size: 14px;
+}
+
+.btn__cus {
+    background-color: #eee;
+    border-color: #0000;
+    color: #767676;
+    cursor: not-allowed;
+    /* padding: 7px; */
+    height: 35px;
+    padding: 0 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.grid__wrap {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 15px;
     gap: 15px;
+    padding: 15px 0;
 }
-.footer__wrap hr{
+
+.footer__wrap hr {
     background-color: #747474;
 }
 
-.footer__wrap{
+.footer__wrap {
     background-color: #1d262d;
     padding: 60px 0 30px 0;
 }
-.footer__wrap h2{
+
+.footer__wrap h2 {
     margin: 0 0 10px;
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
     color: #fff;
 }
-.footer__wrap ul li a{
+
+.footer__wrap ul li a {
     color: #869fb2;
     text-decoration: none;
     font-size: 15px;
 }
+
 .footer__wrap ul li {
-   padding-bottom: 5px;
+    padding-bottom: 5px;
 }
-.footer__btm p{
+
+.footer__btm p {
     margin-bottom: 0;
     font-size: 14px;
 }
-.btn__tag{
-    background-color: #eeeeee;
-    padding: 5px 30px;
+
+.btn__tag {
+
     text-decoration: none;
-    color: #000;
     border-radius: 6px;
-    font-size: 14px;
-    margin-right: 10px;
+
+    margin-right: 25px;
+    color: #767676;
 }
-.ta__wrap{
-    padding: 10px;
+
+.ta__wrap {
+    padding: 15px;
     display: flex;
     overflow: auto;
 }
-.cnt__wrap{
+.login__wrapper {
     height: 100vh;
+
+    justify-content: center;
+    display: flex;
+    padding-top: 100px;
 }
-.cnt_wrapper{
-    width: 60%;
-    max-width: 600px;
-    margin: auto;
+.login__wrapper .login__wrap{
+    width: 550px;
+    padding: 20px;
+}
+.login__wrapper .login__wrap h2{
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.form__control{
+    background: #f1f1f1;
+    border-radius: 6px;
+    border: 2px solid #fff;
+    padding: 1rem;
+    display: block;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    color: #1a1a1a;
+}
+.btn__primary{
+    border: none;
+    background: #000;
+    padding: 1rem 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+}
+.login__loop{
+    position: absolute;
+    font-family: 'Epilogue stamp',sans-serif;
+    font-size: 10vw;
+    top: 0;
+    left: 20vw;
+    right: auto;
+    bottom: auto;
+    font-weight: 400;
+    white-space: nowrap;
+    transform: rotate(90deg);
+    transform-origin: 0% 0%;
+    width: 100vh;
+    
+}
+.login__loop .text{
+   
 }
