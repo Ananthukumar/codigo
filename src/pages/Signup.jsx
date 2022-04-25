@@ -1,6 +1,6 @@
 import React from "react";
 
-function login() {
+function Signup() {
     return(
         <div className="" style={{position:"relative"}}>
         <div className="login__wrapper">
@@ -9,7 +9,7 @@ function login() {
                         <a href="/" className="logo"><svg width="50" height="50" class="hic6U" viewBox="0 0 32 32" version="1.1" aria-labelledby="unsplash-home" aria-hidden="false"><title id="unsplash-home">
                 </title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></a>
                         </div> */}
-                        <h2 className="text-center">LOG IN</h2>
+                        <h2 className="text-center">JOIN</h2>
                         <div className="form__group mb-3">
                             <input type="text" className="form__control" placeholder="Email " />
                         </div>
@@ -19,7 +19,7 @@ function login() {
                         <div className="d-grid">
                             <button className="btn__primary">Submit</button>
                         </div>
-                        <p className="text-center py-4">Don't have an account? <a href="/signup"> Join</a></p> 
+                        <p className="text-center py-4">Already have an account? <a href="/login"> Log In</a></p> 
             </div>
 
           
@@ -34,4 +34,4 @@ function login() {
     )
 }
 
-export default login
+export default Signup
